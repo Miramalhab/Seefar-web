@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEST — Seefar Homepage v0</title>
+<meta name="description" content="TEST build — Seefar Foundation homepage v0. Seefar helps governments and partners respond to irregular migration with evidence-based behaviour-change programmes across 29 countries.">
+<link rel="icon" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body data-screen-label="Homepage">
+
+
+
+<!-- ====================== HEADER ====================== -->
+<header class="hdr">
+  <div class="wrap hdr__bar">
+    <a class="hdr__logo" href="#top" aria-label="Seefar — home"><img src="assets/images/logo-header.svg" alt="Seefar"></a>
+    <nav class="hdr__nav" aria-label="Primary">
+      <a href="#themes" class="is-active">What we do</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About us</a>
+      <a href="#partner">Partner with us</a>
+      <a href="#careers">Careers</a>
+    </nav>
+    <div class="hdr__right">
+      <button class="iconbtn" id="searchBtn" aria-label="Search seefar.org">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      </button>
+      <a class="hdr__contact" href="#partner">Contact</a>
+      <button class="iconbtn hdr__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer (≤2 levels; Careers at level 1) -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__scrim" data-close=""></div>
+  <div class="drawer__panel" role="dialog" aria-label="Menu">
+    <div class="drawer__top">
+      <img class="hdr__logo" src="assets/images/logo-header.svg" alt="Seefar" style="height:24px">
+      <button class="iconbtn" data-close="" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <nav class="drawer__nav" aria-label="Mobile">
+      <div class="drawer__item">
+        <button class="drawer__acc" aria-expanded="false">What we do
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+        <div class="drawer__sub">
+          <a href="#themes">Themes</a>
+          <a href="#methods">How we work</a>
+        </div>
+      </div>
+      <div class="drawer__item">
+        <button class="drawer__acc" aria-expanded="false">Projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+        <div class="drawer__sub">
+          <a href="#projects">Project library</a>
+          <a href="#human">Stories</a>
+          <a href="#recency">Publications</a>
+        </div>
+      </div>
+      <div class="drawer__item">
+        <button class="drawer__acc" aria-expanded="false">About us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+        <div class="drawer__sub">
+          <a href="#about">Our story</a>
+          <a href="#about">People &amp; leadership</a>
+          <a href="#about">Values</a>
+        </div>
+      </div>
+      <div class="drawer__item"><a href="#partner">Partner with us</a></div>
+      <div class="drawer__item"><a href="#careers">Careers</a></div>
+    </nav>
+    <div class="drawer__cta">
+      <a class="btn btn--primary btn--block" href="#partner">Contact us</a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ============ 1 · HERO (C1) ============ -->
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Seefar Foundation</p>
+        <h1 class="hero__title pending" id="hero-h">Changing what people decide — about migration, work, and their futures.</h1>
+        <p class="hero__sub pending">We design and deliver evidence-based programmes that give people the information and support to make safer choices.</p>
+        <div class="hero__flagrow">
+          <span class="pending-tag">Pending — comms consultant</span>
+          <span class="meta" style="font-size:11px">Working headline &amp; subline · structure final</span>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">Explore our projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+          <a class="btn btn--outline" href="#partner">Partner with us</a>
+        </div>
+      </div>
+      <div class="hero__photo">
+        <img src="assets/images/hero-photo.jpg" alt="A young woman reads information on her phone at dusk, a city lit behind her." loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 · LOGO STRIP (C2) ============ -->
+  <section class="logos" aria-label="Funders and partners">
+    <div class="wrap">
+      <p class="logos__label">Trusted by governments and multilateral funders</p>
+      <div class="logos__scroll" role="list">
+        <a class="funder funder--link" role="listitem" href="#projects"><span class="funder__name">European Union</span><span class="funder__type">Institution</span><span class="funder__ph">Logo placeholder</span></a>
+        <a class="funder funder--link" role="listitem" href="#projects"><span class="funder__name">UK FCDO</span><span class="funder__type">Government</span><span class="funder__ph">Logo placeholder</span></a>
+        <div class="funder" role="listitem"><span class="funder__name">German Federal Foreign Office</span><span class="funder__type">Government</span><span class="funder__ph">Logo placeholder</span></div>
+        <div class="funder" role="listitem"><span class="funder__name">Danish MFA</span><span class="funder__type">Government</span><span class="funder__ph">Logo placeholder</span></div>
+        <div class="funder" role="listitem"><span class="funder__name">Swedish Ministry of Justice</span><span class="funder__type">Government</span><span class="funder__ph">Logo placeholder</span></div>
+        <div class="funder" role="listitem"><span class="funder__name">UK Home Office</span><span class="funder__type">Government</span><span class="funder__ph">Logo placeholder</span></div>
+        <div class="funder" role="listitem"><span class="funder__name">ICMPD</span><span class="funder__type">Institution</span><span class="funder__ph">Logo placeholder</span></div>
+        <div class="funder" role="listitem"><span class="funder__name">Macquarie Group Foundation</span><span class="funder__type">Philanthropy</span><span class="funder__ph">Logo placeholder</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · IMPACT COUNTERS (C3) ============ -->
+  <section class="proof" id="impact" aria-labelledby="impact-h">
+    <div class="wrap">
+      <p class="eyebrow">Seefar Foundation, by the numbers</p>
+      <h2 id="impact-h" class="reveal">The evidence behind the work</h2>
+      <div class="counters" style="margin-top:24px">
+        <a class="counter reveal" href="#projects" aria-label="29 countries — see the project library">
+          <div class="counter__fig" data-count="29">0</div>
+          <div class="counter__label">Countries with active or completed programmes</div>
+          <span class="counter__ev">See the library
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+        </a>
+        <a class="counter reveal" href="#projects" aria-label="44 projects delivered — see the project library">
+          <div class="counter__fig" data-count="44">0</div>
+          <div class="counter__label">Projects delivered as Seefar Foundation</div>
+          <span class="counter__ev">See the library
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+        </a>
+        <div class="counter reveal">
+          <div class="counter__fig">Since 2017</div>
+          <div class="counter__label">Operating as a Belgian foundation</div>
+        </div>
+        <div class="counter counter--pending reveal pending" style="outline-offset:8px">
+          <div class="counter__fig" style="color:var(--slate-2)">100k+</div>
+          <div class="counter__label">Participants reached <span class="meta">(as of —)</span></div>
+          <span class="pending-tag" style="margin-top:8px">Pending — figure owner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 · FOOTPRINT MAP (C4) ============ -->
+  <section class="map" aria-labelledby="map-h">
+    <div class="wrap">
+      <h2 id="map-h" class="sr-only">Where we work</h2>
+      <a class="map__card reveal" href="#projects" aria-label="Seefar works across 29 countries; darker pins mark countries with documented project pages. Open the project library, geography view.">
+        <svg class="map__svg" id="worldMap" viewBox="0 0 640 300" role="img" aria-hidden="true"></svg>
+        <div class="map__foot">
+          <div class="map__key">
+            <span class="map__keyitem"><span class="dot-key dot-key--foot"></span> 29 countries of operation</span>
+            <span class="map__keyitem"><span class="dot-key dot-key--pin"></span> Darker pins = explore our documented projects</span>
+          </div>
+          <span class="map__go">Open the project map
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ 5 · FEATURED PROJECTS (C5) ============ -->
+  <section class="feat" id="projects" aria-labelledby="feat-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Featured projects</p>
+        <h2 id="feat-h">Specific, evidenced, named</h2>
+      </div>
+      <div class="feat__grid">
+        <a class="card reveal" href="#projects">
+          <div class="card__thumb"><img src="assets/images/hero-photo.jpg" alt="">
+            <span class="badge badge--completed"><span class="badge__dot"></span> Completed</span></div>
+          <div class="card__body">
+            <span class="card__theme">Informed migration decisions</span>
+            <h3 class="card__title">CERIM — Counter-trafficking evidence in regional migration</h3>
+            <div class="card__meta"><span class="card__country">Iraq · Kurdistan Region</span><span class="card__years">2022–2024</span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="#projects">
+          <div class="card__thumb card__thumb--ph">
+            <span class="badge badge--ongoing"><span class="badge__dot"></span> Ongoing</span></div>
+          <div class="card__body">
+            <span class="card__theme">Livelihoods &amp; reintegration</span>
+            <h3 class="card__title">NR2 — Afghanistan livelihoods hub</h3>
+            <div class="card__meta"><span class="card__country">Afghanistan</span><span class="card__years">2023–present</span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="#projects">
+          <div class="card__thumb card__thumb--ph">
+            <span class="badge badge--completed"><span class="badge__dot"></span> Completed</span></div>
+          <div class="card__body">
+            <span class="card__theme">Informed migration decisions</span>
+            <h3 class="card__title">NLM — Next-level messaging on irregular migration</h3>
+            <div class="card__meta"><span class="card__country">Nigeria</span><span class="card__years">2021–2023</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="feat__more">
+        <a class="arrowlink" href="#projects">See all projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · THEMES (weighted tiles) ============ -->
+  <section class="themes" id="themes" aria-labelledby="themes-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2 id="themes-h">Four themes, one taxonomy
+          <span class="pending-tag" style="vertical-align:middle">Pending — label blessing</span></h2>
+      </div>
+      <div class="themes__grid">
+        <a class="theme theme--lead reveal" href="#projects">
+          <span class="theme__name">Informed migration decisions</span>
+          <span class="theme__foot">
+            <span class="theme__count">7 projects</span>
+            <span class="theme__arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+        <a class="theme reveal" href="#projects">
+          <span class="theme__name">Livelihoods &amp; reintegration</span>
+          <span class="theme__foot"><span class="theme__count">2 projects</span>
+            <span class="theme__arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
+        </a>
+        <a class="theme reveal" href="#projects">
+          <span class="theme__name">Skills, work &amp; mobility</span>
+          <span class="theme__foot"><span class="theme__count">2 projects</span>
+            <span class="theme__arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
+        </a>
+        <a class="theme reveal" href="#projects">
+          <span class="theme__name">Rights, legal access &amp; policy</span>
+          <span class="theme__foot"><span class="theme__count">2 projects</span>
+            <span class="theme__arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 · HOW WE WORK (methods + mission video C9) ============ -->
+  <section class="methods" id="methods" aria-labelledby="methods-h">
+    <div class="wrap">
+      <div class="methods__layout">
+        <div>
+          <div class="section-head reveal">
+            <p class="eyebrow">How we work</p>
+            <h2 id="methods-h">A hybrid model: expert advisory and the technology to deliver it at scale</h2>
+          </div>
+          <div class="methods__grid">
+            <div class="method reveal"><span class="method__icon"><i data-lucide="radio-tower"></i></span>
+              <p class="method__name">Strategic communication</p>
+              <p class="method__desc">Behaviourally-informed campaigns that reach people where decisions are made.</p></div>
+            <div class="method reveal"><span class="method__icon"><i data-lucide="messages-square"></i></span>
+              <p class="method__name">Counselling</p>
+              <p class="method__desc">One-to-one guidance through trusted channels, including chat and helplines.</p></div>
+            <div class="method reveal"><span class="method__icon"><i data-lucide="graduation-cap"></i></span>
+              <p class="method__name">Education</p>
+              <p class="method__desc">School outreach, e-learning and CSO training through Seefar Academy.</p></div>
+            <div class="method reveal"><span class="method__icon"><i data-lucide="smartphone"></i></span>
+              <p class="method__name">Digitalisation</p>
+              <p class="method__desc">Products such as Canda and our WhatsApp chatbot that scale a service.</p></div>
+          </div>
+        </div>
+        <a class="video methods__video reveal" href="#methods" aria-label="Play: our mission and vision (video loads on tap)">
+          <span class="video__scrim"></span>
+          <span class="video__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+          <span class="video__cap">Mission &amp; vision — 2 min · captioned</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8 · A HUMAN MOMENT (C9 + C8) ============ -->
+  <section class="human" id="human" aria-labelledby="human-h">
+    <div class="wrap">
+      <p class="eyebrow">A human moment</p>
+      <h2 id="human-h" class="sr-only">A participant's story</h2>
+      <div class="human__grid">
+        <a class="video reveal" href="#human" aria-label="Play: Amina's story (video loads on tap)">
+          <img src="assets/images/video-thumbnail.png" alt="A family sits together outdoors, smiling.">
+          <span class="video__scrim"></span>
+          <span class="video__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+          <span class="video__cap">Heroes at Home — 3 min · captioned</span>
+        </a>
+        <figure class="quote reveal">
+          <div class="quote__mark">“</div>
+          <p class="quote__text">The counsellor did not tell me what to do. She gave me the facts I did not have, and I made the decision myself.</p>
+          <figcaption class="quote__by">
+            <span class="quote__name">Amina H.</span>
+            <span class="quote__role">Programme participant, RADIM — Iraq</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9 · RECENCY STRIP (C12) ============ -->
+  <section class="recency" id="recency" aria-labelledby="recency-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Still moving</p>
+        <h2 id="recency-h">Latest updates</h2>
+      </div>
+      <div class="recency__grid">
+        <a class="update reveal" href="#projects">
+          <span class="update__date">May 2026</span>
+          <span class="update__title">CERIM final evaluation published</span>
+          <span class="update__tag">Informed migration decisions · Iraq</span>
+        </a>
+        <a class="update reveal" href="#projects">
+          <span class="update__date">Apr 2026</span>
+          <span class="update__title">Afghanistan livelihoods hub reaches its second cohort</span>
+          <span class="update__tag">Livelihoods &amp; reintegration · Afghanistan</span>
+        </a>
+        <a class="update reveal" href="#recency">
+          <span class="update__date">Mar 2026</span>
+          <span class="update__title">2025 Annual Report now available to download</span>
+          <span class="update__tag">Publications</span>
+        </a>
+      </div>
+      <span class="linkedin">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 17V9.99H6V17h2.34zM7.17 8.96a1.36 1.36 0 1 0 0-2.72 1.36 1.36 0 0 0 0 2.72zM18 17v-3.85c0-2.06-1.1-3.02-2.57-3.02-1.18 0-1.71.65-2 1.11V9.99H11.1c.03.66 0 7.01 0 7.01h2.33v-3.92c0-.21.02-.42.08-.57.17-.42.55-.85 1.2-.85.85 0 1.19.64 1.19 1.59V17H18z"></path></svg>
+        Live updates also appear on our LinkedIn feed
+      </span>
+    </div>
+  </section>
+
+  <!-- ============ 10 · CLOSING CTA (C10) ============ -->
+  <section class="closing" id="partner" aria-labelledby="closing-h">
+    <div class="wrap">
+      <h2 class="closing__title" id="closing-h">Fund a project. Commission our methods. Build a consortium.</h2>
+      <p class="closing__sub">Every claim on this site has its evidence one click away. Let's talk about what you're trying to change.</p>
+      <div class="closing__actions">
+        <a class="btn btn--primary" href="#partner">Partner with us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+        <a class="closing__quiet" href="#careers" id="careers">Join the team
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="ftr" id="about">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div class="ftr__brand">
+        <img src="assets/images/logo-footer.svg" alt="Seefar">
+        <p class="ftr__tag">We help governments and partners respond to irregular migration with evidence-based behaviour-change programmes.</p>
+        <p class="ftr__entity">Seefar Foundation — a Belgian vzw founded in 2017, Brussels. Distinct from Farsight (Hong Kong).</p>
+      </div>
+      <div class="ftr__cols">
+        <div class="ftr__col">
+          <button class="ftr__acc" aria-expanded="false">What we do
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+          <div class="ftr__links">
+            <a href="#themes">Informed migration decisions</a>
+            <a href="#themes">Livelihoods &amp; reintegration</a>
+            <a href="#themes">Skills, work &amp; mobility</a>
+            <a href="#themes">Rights, legal access &amp; policy</a>
+            <a href="#methods">How we work</a>
+          </div>
+        </div>
+        <div class="ftr__col">
+          <button class="ftr__acc" aria-expanded="false">Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+          <div class="ftr__links">
+            <a href="#projects">Project library</a>
+            <a href="#human">Stories</a>
+            <a href="#recency">Publications</a>
+          </div>
+        </div>
+        <div class="ftr__col">
+          <button class="ftr__acc" aria-expanded="false">About
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+          <div class="ftr__links">
+            <a href="#about">Our story</a>
+            <a href="#about">People &amp; leadership</a>
+            <a href="#about">Values</a>
+            <a href="#about">Technology levels</a>
+            <a href="#careers">Careers</a>
+          </div>
+        </div>
+        <div class="ftr__col">
+          <button class="ftr__acc" aria-expanded="false">Get in touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+          <div class="ftr__links">
+            <a href="#partner">Partner with us</a>
+            <a href="#partner">Contact</a>
+            <a href="#careers">Media</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ftr__bottom">
+      <span>© 2026 Seefar Foundation. All rights reserved.</span>
+      <span class="ftr__legal">
+        <a href="privacy-policy.html">Privacy policy</a>
+        <a href="#about">Safeguarding policy</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ====================== COOKIE BAR ====================== -->
+<div class="cookie" id="cookie" role="region" aria-label="Cookie notice">
+  <p class="cookie__text">We use minimal cookies to understand how this site is used. <a href="privacy-policy.html">Read our privacy policy</a>.</p>
+  <div class="cookie__actions">
+    <button class="btn cookie__decline" id="cookieDecline">Decline</button>
+    <button class="btn btn--primary" id="cookieAccept">Accept</button>
+  </div>
+</div>
+
+<!-- only direct-edit overrides land here -->
+<style id="__om-edit-overrides"></style>
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+</body></html>
